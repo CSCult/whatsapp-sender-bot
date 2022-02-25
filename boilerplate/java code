@@ -1,0 +1,36 @@
+public class MainActivity extends AppCompatActivity {
+
+    EditText phone;
+    EditText message;
+    Button send;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        phone = findViewById("Enter the id we have given to the phone text views");
+        message = findViewById("Enter the id we have given to the message text view");
+        send = findViewById("Enter the id we have given to the send button");
+
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+               
+               "Capture the text from number and message , convert it to string ."
+
+               String finalUrl = "Insert the API link here "
+                       + number
+                       + "&text="
+                       + msg;
+
+                Intent intent = new Intent("Parse the URL here");
+                startActivity(intent);
+            }
+        });
+
+
+    }
+}
